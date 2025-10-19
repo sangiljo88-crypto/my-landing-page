@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강남아쿠엠 | 김동근 대표의 28년 경력 가죽시트 복원 전문</title>
+    <meta name="description" content="1997년부터 28년 경력의 김동근 대표가 찢어지고 벗겨진 가죽시트를 새것처럼 완벽하게 복원합니다. 강남아쿠엠의 특화된 기술로 차량 가치를 지키세요.">
+    
+    <!-- Tally 스크립트 추가 -->
+    <script src="https://tally.so/widgets/embed.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-gold: #c9a961; --primary-dark: #1a1a1a; --secondary-dark: #2d2d2d;
+            --accent-gold: #e8d5a8; --text-light: #f5f5f5; --text-dark: #2c2c2c;
+            --luxury-brown: #8b7355; --highlight-gold: #f4e4c1;
+        }
+        body { 
+            font-family: 'Noto Sans KR', sans-serif; 
+            line-height: 1.7; 
+            color: var(--text-dark); 
+            overflow-x: hidden; 
+            background: #ffffff; 
+            -webkit-font-smoothing: antialiased; 
+            -moz-osx-font-smoothing: grayscale; 
+        }
+
+        /* [신규] 업그레이드 섹션용 스타일 */
+        .pain-scenario-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+            margin-top: 80px; /* 수정: 상단 간격 증가 */
+            max-width: 1400px; /* 수정: 최대 너비 설정 */
+            margin-left: auto; /* 수정: 중앙 정렬 */
+            margin-right: auto; /* 수정: 중앙 정렬 */
+        }
+        .pain-card { background: #fff9f0; padding: 40px 30px; border-radius: 20px; border: 2px solid var(--highlight-gold); box-shadow: 0 10px 30px rgba(201, 169, 97, 0.1); }
+        .pain-card h4 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; color: var(--luxury-brown); margin-bottom: 15px; }
+        .pain-card p { font-size: 1.05rem; color: #444; line-height: 1.8; }
+
+        .comparison-section { padding: 140px 40px; background: #f9f9f9; }
+        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 80px; }
+        .comparison-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.08); transition: all 0.4s ease; }
+        .comparison-card.villain:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(233, 69, 96, 0.2); }
+        .comparison-card.hero { background: var(--primary-dark); color: white; border: 4px solid var(--primary-gold); box-shadow: 0 30px 70px rgba(201, 169, 97, 0.3); }
+        .comparison-card h3 { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 900; margin-bottom: 20px; }
+        .comparison-card.villain h3 { color: #e94560; } 
+        .comparison-card.hero h3 { color: var(--primary-gold); } 
+        .comparison-card p { font-size: 1.1rem; line-height: 1.9; margin-bottom: 20px; }
+        .comparison-card .reason { font-weight: 700; color: #333; }
+        .comparison-card.hero p, .comparison-card.hero .reason { color: var(--text-light); }
+
+        .process-section { padding: 140px 40px; background: white; }
+        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 80px; }
+        .process-card { background: white; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.4s ease; }
+        .process-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(201, 169, 97, 0.2); }
+        .process-image { background: #f0f0f0; height: 250px; display: flex; align-items: center; justify-content: center; color: #999; font-weight: bold; }
+        .process-image img { width: 100%; height: 100%; object-fit: cover; }
+        .process-text { padding: 30px; }
+        .process-text h4 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; color: var(--primary-gold); margin-bottom: 15px; }
+        .process-text p { font-size: 1.05rem; color: #444; line-height: 1.8; }
+
+        .case-study-card { background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); margin-bottom: 60px; overflow: hidden; }
+        .case-study-header { padding: 30px 40px; background: var(--primary-dark); color: var(--primary-gold); }
+        .case-study-header h3 { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; }
+        .case-study-body { padding: 40px; }
+        .case-study-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+        .case-study-image { background: #f0f0f0; height: 400px; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #999; font-weight: bold; overflow: hidden; position: relative; } 
+        .case-study-image img { width: 100%; height: 100%; object-fit: cover; }
+        .case-study-image h4 { position: absolute; bottom: 15px; left: 15px; background: rgba(0,0,0,0.5); color: white; padding: 5px 10px; border-radius: 5px; font-size: 1rem; } 
+        .case-study-image.after h4 { background: var(--primary-gold); } 
+        .case-study-info p { font-size: 1.1rem; line-height: 1.9; margin-bottom: 15px; }
+        .case-study-info strong { color: var(--text-dark); font-weight: 700; }
+
+        .real-review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .real-review-card { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: all 0.4s ease; overflow: visible; }
+        .real-review-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(201, 169, 97, 0.2); }
+        .real-review-card img { width: 100%; height: 100%; object-fit: contain; }
+        .review-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid var(--primary-gold); }
+        .review-icon { font-size: 2rem; }
+        .review-customer { font-size: 1.2rem; font-weight: 700; color: var(--primary-dark); }
+        .review-car { font-size: 0.95rem; color: #666; margin-top: 3px; }
+        .chat-message { margin-bottom: 15px; }
+        .chat-message.customer { text-align: left; }
+        .chat-message.business { text-align: right; }
+        .chat-bubble { display: inline-block; max-width: 85%; padding: 12px 18px; border-radius: 18px; font-size: 0.95rem; line-height: 1.6; }
+        .chat-message.customer .chat-bubble { background: #f0f0f0; color: #333; }
+        .chat-message.business .chat-bubble { background: var(--primary-gold); color: white; }
+        .review-divider { height: 1px; background: linear-gradient(90deg, transparent, #ddd, transparent); margin: 25px 0; position: relative; }
+        .review-divider::after { content: '복원 후'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: white; padding: 0 15px; font-size: 0.85rem; color: var(--primary-gold); font-weight: 700; }
+        .review-result { background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); padding: 20px; border-radius: 12px; border-left: 4px solid var(--primary-gold); margin-top: 20px; }
+        .review-result-text { font-size: 1.05rem; line-height: 1.8; color: var(--text-dark); font-weight: 500; }
+        .review-highlight { color: var(--primary-gold); font-weight: 700; font-size: 1.1rem; }
+
+        .urgency-box { background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border: 4px solid var(--primary-gold); padding: 50px; border-radius: 20px; margin: 80px auto; box-shadow: 0 15px 50px rgba(201, 169, 97, 0.2); text-align: center; max-width: 1100px; } /* 수정: 중앙 정렬 */
+        .urgency-box h3 { color: var(--luxury-brown); font-size: 2.3rem; margin-bottom: 30px; font-family: 'Noto Serif KR', serif; font-weight: 900; }
+        .urgency-box p { font-size: 1.2rem; color: var(--text-dark); line-height: 2; }
+        .urgency-box .highlight { color: #e94560; font-weight: 900; font-size: 1.5rem; }
+
+        .faq-section { padding: 0 40px 140px; background: #f9f9f9; }
+        .faq-list { max-width: 900px; margin: 80px auto 0; } 
+        .faq-item { background: white; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .faq-question { padding: 25px 30px; font-size: 1.2rem; font-weight: 700; color: var(--text-dark); cursor: pointer; position: relative; }
+        .faq-question::after { content: '+'; position: absolute; right: 30px; font-size: 1.8rem; color: var(--primary-gold); transition: transform 0.3s ease; }
+        .faq-answer { padding: 0 30px 30px; font-size: 1.05rem; color: #444; line-height: 1.9; max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.5s ease; }
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
+        .faq-item.active .faq-answer { max-height: 300px; padding: 0 30px 30px; } 
+
+        /* 플로팅 CTA 버튼 스타일 */
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* [기존 CSS 100% 유지] */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideInLeft { from { opacity: 0; transform: translateX(-80px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes slideInRight { from { opacity: 0; transform: translateX(80px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.85); } to { opacity: 1; transform: scale(1); } }
+        @keyframes shimmer { 0% { background-position: -1000px 0; } 100% { background-position: 1000px 0; } }
+        .fade-in-up { animation: fadeInUp 1s ease-out forwards; opacity: 0; }
+        .fade-in { animation: fadeIn 1s ease-out forwards; opacity: 0; }
+        .slide-in-left { animation: slideInLeft 1s ease-out forwards; opacity: 0; }
+        .slide-in-right { animation: slideInRight 1s ease-out forwards; opacity: 0; }
+        .scale-in { animation: scaleIn 1s ease-out forwards; opacity: 0; }
+        nav { position: fixed; top: 0; width: 100%; background: rgba(26, 26, 26, 0.98); backdrop-filter: blur(15px); z-index: 1000; padding: 18px 0; border-bottom: 2px solid var(--primary-gold); transition: all 0.4s ease; box-shadow: 0 2px 30px rgba(0,0,0,0.1); }
+        nav.scrolled { padding: 12px 0; box-shadow: 0 5px 40px rgba(0,0,0,0.4); background: rgba(26, 26, 26, 1); }
+        .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 900; color: var(--primary-gold); text-decoration: none; letter-spacing: 3px; text-shadow: 0 0 30px rgba(201, 169, 97, 0.6); transition: all 0.3s ease; }
+        .logo:hover { text-shadow: 0 0 40px rgba(201, 169, 97, 0.9); }
+        .nav-contact { display: flex; align-items: center; gap: 30px; }
+        .nav-phone { color: var(--text-light); font-size: 1.15rem; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 10px; padding: 12px 25px; border: 2px solid var(--primary-gold); border-radius: 50px; transition: all 0.3s ease; background: transparent; }
+        .nav-phone:hover { background: var(--primary-gold); color: white; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(201, 169, 97, 0.5); }
+        .nav-cta-button { color: white; font-size: 1rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; padding: 12px 25px; background: linear-gradient(135deg, var(--primary-gold) 0%, var(--luxury-brown) 100%); border-radius: 50px; transition: all 0.3s ease; border: none; cursor: pointer; }
+        .nav-cta-button:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(201, 169, 97, 0.5); }
+        .hero { position: relative; height: 100vh; min-height: 750px; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2d2d2d 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; padding-top: 70px; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 15% 50%, rgba(201, 169, 97, 0.10) 0%, transparent 40%), radial-gradient(circle at 85% 50%, rgba(201, 169, 97, 0.10) 0%, transparent 40%), radial-gradient(circle at 50% 80%, rgba(201, 169, 97, 0.05) 0%, transparent 50%); animation: shimmer 8s ease-in-out infinite alternate; }
+        .hero-content { position: relative; z-index: 1; text-align: center; max-width: 1100px; padding: 0 40px; }
+        .hero-badge { display: inline-block; padding: 14px 35px; background: linear-gradient(135deg, var(--primary-gold), var(--luxury-brown)); color: white; font-size: 1rem; font-weight: 700; letter-spacing: 4px; margin-bottom: 35px; border-radius: 50px; text-transform: uppercase; box-shadow: 0 15px 40px rgba(201, 169, 97, 0.4); position: relative; overflow: hidden; }
+        .hero-badge::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent); animation: shimmer 3s infinite; }
+        .hero h1 { font-family: 'Noto Serif KR', serif; font-size: 4.5rem; font-weight: 900; color: var(--text-light); margin-bottom: 30px; line-height: 1.3; text-shadow: 0 8px 40px rgba(0,0,0,0.7); letter-spacing: -1px; }
+        .hero .highlight { color: var(--primary-gold); display: block; font-size: 5rem; margin: 25px 0; text-shadow: 0 0 60px rgba(201, 169, 97, 0.8); font-weight: 900; }
+        .hero-subtitle { font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 25px; font-weight: 400; letter-spacing: 2px; }
+        .hero p { font-size: 1.3rem; color: rgba(255, 255, 255, 0.95); margin-bottom: 55px; line-height: 2; font-weight: 300; }
+        .cta-button-primary { display: inline-flex; align-items: center; justify-content: center; padding: 25px 65px; background: linear-gradient(135deg, var(--primary-gold) 0%, var(--luxury-brown) 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.4rem; font-weight: 700; transition: all 0.5s ease; box-shadow: 0 20px 50px rgba(201, 169, 97, 0.5); border: none; cursor: pointer; letter-spacing: 1px; position: relative; overflow: hidden; min-height: 44px; }
+        .cta-button-primary::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: left 0.6s ease; }
+        .cta-button-primary:hover::before { left: 100%; }
+        .cta-button-primary:hover { transform: translateY(-7px); box-shadow: 0 25px 60px rgba(201, 169, 97, 0.7); }
+        .expert-section { padding: 140px 40px; background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%); position: relative; }
+        .expert-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 300px; background: radial-gradient(ellipse at center, rgba(201, 169, 97, 0.05) 0%, transparent 70%); }
+        .expert-content { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; position: relative; z-index: 1; }
+        .expert-text h2 { font-family: 'Noto Serif KR', serif; font-size: 3.5rem; margin-bottom: 35px; color: var(--primary-dark); font-weight: 900; line-height: 1.3; letter-spacing: -1px; }
+        .expert-name { font-size: 2.8rem; color: var(--luxury-brown); margin-bottom: 25px; font-weight: 900; font-family: 'Noto Serif KR', serif; }
+        .expert-credentials { list-style: none; margin: 40px 0; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.08); }
+        .expert-credentials li { padding: 18px 0; font-size: 1.25rem; color: var(--text-dark); border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 18px; font-weight: 500; }
+        .expert-credentials li:last-child { border-bottom: none; }
+        .expert-credentials li::before { content: '✓'; color: var(--primary-gold); font-weight: bold; font-size: 1.8rem; min-width: 30px; }
+        .expert-image { position: relative; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.25); border: 5px solid var(--primary-gold); transition: all 0.5s ease; height: 750px; } 
+        .expert-image:hover { transform: translateY(-10px); box-shadow: 0 50px 120px rgba(0,0,0,0.35); }
+        .expert-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; } 
+        .expert-image:hover img { transform: scale(1.05); }
+        .expert-description { font-size: 1.15rem; line-height: 2; color: #444; margin-top: 35px; padding: 35px; background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 4px solid var(--primary-gold); border-radius: 15px; box-shadow: 0 10px 30px rgba(201, 169, 97, 0.15); }
+        .story-section { padding: 140px 40px; background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 30px; }
+        @media (max-width: 768px) { .container { padding: 0 20px; } }
+        @media (max-width: 480px) { .container { padding: 0 15px; } }
+        .section-header { text-align: center; margin-bottom: 100px; }
+        .section-badge { display: inline-block; padding: 10px 30px; background: linear-gradient(135deg, var(--primary-gold), var(--luxury-brown)); color: white; font-size: 0.9rem; font-weight: 700; letter-spacing: 3px; margin-bottom: 25px; border-radius: 30px; text-transform: uppercase; box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3); }
+        .section-title { font-family: 'Noto Serif KR', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 40px; color: var(--primary-dark); position: relative; letter-spacing: -1px; }
+        .section-title::after { 
+            content: ''; 
+            position: absolute; 
+            bottom: -20px;
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 120px;
+            height: 6px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold) 30%, var(--primary-gold) 70%, transparent);
+            border-radius: 3px;
+        }
+        .section-title::after { 
+            content: ''; 
+            position: absolute; 
+            bottom: -20px; /* 수정: 위치 조정 */ 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 120px; /* 수정: 길이 증가 */ 
+            height: 6px; /* 수정: 두께 증가 */ 
+            background: linear-gradient(90deg, transparent, var(--primary-gold) 30%, var(--primary-gold) 70%, transparent); /* 수정: 그라데이션 조정 */
+            border-radius: 3px; /* 수정: 끝 부드럽게 */
+        }
+        .section-subtitle { font-size: 1.3rem; color: #666; margin-top: 50px; /* 수정: 상단 간격 증가 */ line-height: 2; font-weight: 300; }
+        .story-quote { background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border-left: 6px solid var(--primary-gold); padding: 50px; border-radius: 20px; margin: 80px auto; box-shadow: 0 15px 50px rgba(201, 169, 97, 0.2); font-size: 1.25rem; line-height: 2.2; color: var(--text-dark); font-style: normal; position: relative; max-width: 1100px; } 
+        .story-quote::before { content: '"'; position: absolute; top: -20px; left: 30px; font-size: 6rem; color: var(--primary-gold); opacity: 0.3; font-family: serif; }
+        .story-highlight { background: var(--primary-gold); color: white; padding: 4px 12px; border-radius: 6px; font-weight: 700; font-style: normal; box-shadow: 0 2px 10px rgba(201, 169, 97, 0.3); }
+        .timeline-section { padding: 140px 40px; background: white; }
+        .timeline { max-width: 1100px; margin: 100px auto 0; position: relative; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, var(--primary-gold), var(--luxury-brown), var(--primary-gold)); box-shadow: 0 0 20px rgba(201, 169, 97, 0.5); transform: translateX(-50%); } 
+        .timeline-item { position: relative; margin-bottom: 80px; width: 100%; } 
+        .timeline-item:nth-child(odd) .timeline-content { margin-right: 50%; padding-right: 60px; text-align: right; } 
+        .timeline-item:nth-child(even) .timeline-content { margin-left: 50%; padding-left: 60px; text-align: left; } 
+        .timeline-content { width: 50%; background: white; padding: 35px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); position: relative; transition: all 0.4s ease; box-sizing: border-box; } 
+        .timeline-content:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(0,0,0,0.15); }
+        .timeline-year { font-size: 2.3rem; font-weight: 900; color: var(--primary-gold); font-family: 'Noto Serif KR', serif; margin-bottom: 18px; }
+        .timeline-description { font-size: 1.1rem; color: #555; line-height: 1.9; }
+        .timeline-dot { position: absolute; left: 50%; top: 20px; transform: translateX(-50%); width: 24px; height: 24px; background: var(--primary-gold); border-radius: 50%; border: 5px solid white; box-shadow: 0 0 0 5px var(--primary-gold), 0 0 20px rgba(201, 169, 97, 0.6); transition: all 0.3s ease; z-index: 1; } 
+        .timeline-item:hover .timeline-dot { transform: translateX(-50%) scale(1.3); }
+        .services-section { padding: 140px 40px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%); color: white; position: relative; overflow: hidden; }
+        .services-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(201, 169, 97, 0.1) 0%, transparent 50%); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; margin-top: 100px; position: relative; z-index: 1; max-width: 1200px; margin-left: auto; margin-right: auto; } 
+        .service-card { background: rgba(255, 255, 255, 0.06); backdrop-filter: blur(15px); padding: 45px; border-radius: 25px; border: 2px solid rgba(201, 169, 97, 0.3); transition: all 0.5s ease; position: relative; overflow: hidden; }
+        .service-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(201, 169, 97, 0.1) 0%, transparent 70%); opacity: 0; transition: opacity 0.5s ease; }
+        .service-card:hover::before { opacity: 1; }
+        .service-card:hover { transform: translateY(-15px); background: rgba(201, 169, 97, 0.15); box-shadow: 0 30px 80px rgba(201, 169, 97, 0.4); border-color: var(--primary-gold); }
+        .service-card h3 { font-size: 1.8rem; margin-bottom: 25px; color: var(--primary-gold); font-weight: 700; font-family: 'Noto Serif KR', serif; }
+        .service-list { list-style: none; padding-left: 0; } 
+        .service-list li { padding: 12px 0; font-size: 1.1rem; color: rgba(255,255,255,0.95); border-bottom: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease; }
+        .service-list li:last-child { border-bottom: none; }
+        .service-list li:hover { color: var(--accent-gold); padding-left: 10px; }
+        .problem-section { padding: 140px 40px; background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%); }
+        .problem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-top: 80px; max-width: 1400px; margin-left: auto; margin-right: auto;} 
+        .problem-card { background: white; padding: 50px 40px; border-radius: 20px; text-align: center; box-shadow: 0 15px 50px rgba(0,0,0,0.08); transition: all 0.4s ease; }
+        .problem-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(0,0,0,0.12); }
+        .problem-icon { font-size: 4rem; margin-bottom: 25px; }
+        .problem-card h3 { font-size: 1.7rem; margin-bottom: 20px; color: var(--primary-dark); font-weight: 700; }
+        .problem-card p { font-size: 1.1rem; color: #555; line-height: 1.9; }
+        .positioning-section { padding: 140px 40px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%); color: white; }
+        .positioning-content { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+        .positioning-content h3 { font-size: 2.5rem; margin-bottom: 30px; color: var(--primary-gold); font-family: 'Noto Serif KR', serif; font-weight: 900; line-height: 1.4; }
+        .positioning-content p { font-size: 1.3rem; line-height: 2; color: rgba(255, 255, 255, 0.95); }
+        .pain-point { background: rgba(255, 255, 255, 0.06); padding: 40px; border-radius: 20px; border-left: 4px solid var(--primary-gold); margin: 50px auto; max-width: 1000px; }
+        .pain-point h3 { font-size: 2rem; color: var(--accent-gold); margin-bottom: 25px; font-family: 'Noto Serif KR', serif; }
+        .pain-point ul { list-style: none; padding-left: 0; }
+        .pain-point li { padding: 18px 0 18px 50px; font-size: 1.15rem; color: rgba(255,255,255,0.95); position: relative; border-bottom: 1px solid rgba(255,255,255,0.1); line-height: 1.9; }
+        .pain-point li:last-child { border-bottom: none; }
+        .pain-point li::before { content: '✗'; position: absolute; left: 0; top: 18px; color: #e94560; font-weight: bold; font-size: 1.8rem; }
+        .solution-section { padding: 140px 40px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%); color: white; position: relative; overflow: hidden; }
+        .solution-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 30% 40%, rgba(201, 169, 97, 0.15) 0%, transparent 60%), radial-gradient(circle at 70% 60%, rgba(201, 169, 97, 0.15) 0%, transparent 60%); }
+        .solution-content { max-width: 1400px; margin: 100px auto 0; position: relative; z-index: 1; display: flex; flex-direction: column; gap: 60px; }
+        .solution-image-container { position: relative; width: 100%; height: 600px; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.4); border: 4px solid var(--primary-gold); margin-bottom: 20px; }
+        .solution-text { text-align: center; max-width: 1200px; margin: 0 auto; }
+        .solution-text h3 { font-size: 2.5rem; margin-bottom: 30px; color: var(--primary-gold); font-family: 'Noto Serif KR', serif; font-weight: 900; }
+        .solution-text p { font-size: 1.2rem; line-height: 2; color: rgba(255, 255, 255, 0.95); margin-bottom: 35px; }
+        .solution-features { list-style: none; padding-left: 0; background: rgba(255, 255, 255, 0.06); padding: 40px 50px; border-radius: 20px; border: 2px solid rgba(201, 169, 97, 0.3); max-width: 900px; margin: 0 auto; }
+        .solution-features li { padding: 20px 0 20px 50px; font-size: 1.15rem; color: rgba(255,255,255,0.95); position: relative; border-bottom: 1px solid rgba(255,255,255,0.1); line-height: 1.9; text-align: left; }
+        .solution-features li:last-child { border-bottom: none; }
+        .solution-features li::before { content: '✓'; position: absolute; left: 0; top: 20px; color: var(--primary-gold); font-weight: bold; font-size: 2rem; }
+        .benefits-section { padding: 140px 40px; background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%); }
+        .benefits-box { background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%); border: 4px solid var(--primary-gold); padding: 60px; border-radius: 20px; margin: 80px auto; box-shadow: 0 20px 60px rgba(201, 169, 97, 0.2); max-width: 1300px; }
+        .benefits-title { text-align: center; font-size: 2.8rem; color: var(--luxury-brown); margin-bottom: 60px; font-family: 'Noto Serif KR', serif; font-weight: 900; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .benefit-item { text-align: center; padding: 35px 25px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.4s ease; }
+        .benefit-item:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(201, 169, 97, 0.2); }
+        .benefit-icon { font-size: 3rem; margin-bottom: 20px; }
+        .benefit-text { font-size: 1.2rem; color: var(--text-dark); line-height: 1.8; font-weight: 500; }
+        .gallery-section { padding: 140px 40px; background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 80px; }
+        .gallery-item { position: relative; height: 500px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); transition: all 0.4s ease; }
+        .gallery-item:hover { transform: translateY(-10px); box-shadow: 0 30px 80px rgba(0,0,0,0.25); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-label { position: absolute; top: 25px; left: 25px; background: var(--primary-gold); color: white; padding: 10px 25px; border-radius: 30px; font-size: 1rem; font-weight: 700; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+        .testimonial-section { padding: 140px 40px; background: white; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 80px; }
+        .testimonial-card { background: white; padding: 45px 40px; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.08); border-left: 4px solid var(--primary-gold); transition: all 0.4s ease; }
+        .testimonial-card:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(201, 169, 97, 0.2); }
+        .stars { color: var(--primary-gold); font-size: 1.5rem; margin-bottom: 20px; }
+        .testimonial-text { font-size: 1.1rem; line-height: 1.9; color: #444; margin-bottom: 25px; font-style: italic; }
+        .author-info { display: flex; align-items: center; gap: 15px; }
+        .author-avatar { width: 60px; height: 60px; background: var(--primary-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.5rem; }
+        .author-info h4 { font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 5px; }
+        .author-info p { font-size: 0.9rem; color: #666; }
+        .location-section { padding: 140px 40px; background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%); }
+        .location-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 80px; align-items: start; }
+        .location-info { background: white; padding: 50px 40px; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.08); }
+        .location-info h3 { font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 40px; font-family: 'Noto Serif KR', serif; font-weight: 900; }
+        .info-item { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f0f0f0; display: flex; gap: 20px; align-items: flex-start; }
+        .info-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .info-icon { font-size: 1.8rem; min-width: 35px; }
+        .info-text h4 { font-size: 1.1rem; color: var(--luxury-brown); margin-bottom: 8px; font-weight: 700; }
+        .info-text p { font-size: 1.05rem; color: #555; line-height: 1.8; }
+        .map-container { border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.15); min-height: 550px; height: 100%; }
+        .kakao-map-desktop { border-radius: 20px; overflow: hidden; }
+        .kakao-map-mobile { height: auto !important; min-height: 450px; }
+        .final-cta-section { padding: 140px 40px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%); color: white; position: relative; overflow: hidden; }
+        .final-cta-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 30% 50%, rgba(201, 169, 97, 0.15) 0%, transparent 60%), radial-gradient(circle at 70% 50%, rgba(201, 169, 97, 0.15) 0%, transparent 60%); }
+        .cta-content { max-width: 1000px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+        .cta-content h2 { font-family: 'Noto Serif KR', serif; font-size: 3rem; margin-bottom: 35px; color: var(--primary-gold); font-weight: 900; line-height: 1.4; }
+        .cta-content p { font-size: 1.2rem; margin-bottom: 50px; line-height: 2; color: rgba(255,255,255,0.95); }
+        footer { background: var(--primary-dark); color: var(--text-light); padding: 80px 40px; text-align: center; border-top: 3px solid var(--primary-gold); }
+        footer .logo { display: inline-block; margin-bottom: 25px; color: var(--primary-gold); }
+        footer p { font-size: 1.05rem; margin: 12px 0; color: rgba(255,255,255,0.9); line-height: 1.9; }
+
+        /* 반응형 */
+        @media (max-width: 1024px) {
+            .expert-content, .location-content { grid-template-columns: 1fr; gap: 60px; }
+            .expert-image { height: 550px; }
+            .solution-image-container { height: 500px; }
+            .hero h1 { font-size: 3rem; }
+            .hero .highlight { font-size: 3.5rem; }
+            .section-title { font-size: 2.5rem; }
+        }
+        @media (max-width: 768px) {
+            nav { padding: 15px 0; }
+            .nav-container { padding: 0 20px; flex-wrap: wrap; }
+            .nav-contact { gap: 15px; }
+            .hero { min-height: 650px; }
+            .hero h1 { font-size: 2.3rem; line-height: 1.3; }
+            .hero .highlight { font-size: 2.5rem; margin: 15px 0; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .hero p { font-size: 1rem; margin-bottom: 40px; }
+            .hero-badge { font-size: 0.8rem; padding: 10px 25px; letter-spacing: 2px; }
+            .cta-button-primary { padding: 18px 35px; font-size: 1.1rem; }
+            .expert-section, .story-section, .timeline-section, .services-section, .problem-section, .positioning-section, .solution-section, .benefits-section, .gallery-section, .testimonial-section, .location-section, .final-cta-section, .comparison-section, .process-section, .faq-section { padding: 80px 20px; } 
+            .expert-text h2 { font-size: 2rem; }
+            .expert-name { font-size: 1.8rem; }
+            .expert-credentials li { font-size: 1rem; }
+            .expert-description { font-size: 1rem; padding: 25px; }
+            .story-quote { font-size: 1.05rem; padding: 30px; line-height: 1.9; }
+            .timeline-year { font-size: 1.6rem; }
+            .timeline-description { font-size: 0.95rem; }
+            .service-card h3 { font-size: 1.4rem; }
+            .service-list li { font-size: 0.95rem; }
+            .problem-card { padding: 35px 25px; }
+            .problem-icon { font-size: 3rem; }
+            .problem-card h3 { font-size: 1.4rem; }
+            .problem-card p { font-size: 0.95rem; }
+            .pain-point { padding: 30px; }
+            .pain-point h3 { font-size: 1.6rem; }
+            .pain-point li { font-size: 1rem; padding-left: 40px; }
+            .positioning-content h3 { font-size: 1.8rem; }
+            .positioning-content p { font-size: 1rem; }
+            .solution-text h3 { font-size: 1.8rem; }
+            .solution-text p { font-size: 1rem; }
+            .solution-features { padding: 25px 30px; }
+            .solution-features li { font-size: 1rem; padding: 15px 0 15px 45px; }
+            .solution-image-container { height: 400px; }
+            .benefits-title { font-size: 2.2rem; }
+            .benefit-item { padding: 30px 20px; }
+            .benefit-icon { font-size: 2.5rem; }
+            .benefit-text { font-size: 1.1rem; }
+            .testimonial-card { padding: 35px; }
+            .stars { font-size: 1.2rem; }
+            .testimonial-text { font-size: 1rem; }
+            .author-avatar { width: 55px; height: 55px; font-size: 1.3rem; }
+            .author-info h4 { font-size: 1.05rem; }
+            .author-info p { font-size: 0.85rem; }
+            .real-review-card { padding: 25px; }
+            .chat-bubble { font-size: 0.9rem; }
+            .location-info { padding: 40px 30px; }
+            .location-info h3 { font-size: 1.8rem; }
+            .info-icon { font-size: 1.4rem; }
+            .info-text h4 { font-size: 1rem; }
+            .info-text p { font-size: 0.95rem; }
+            .cta-content h2 { font-size: 2.2rem; }
+            /* 수정: 모바일 폰트 크기 조정 */
+            .cta-content p { font-size: 1.05rem; /* 기존 1.1rem */ margin-bottom: 40px; line-height: 1.9; } 
+            footer p { font-size: 0.95rem; }
+            .problem-grid, .gallery-grid, .testimonial-grid, .benefits-grid { grid-template-columns: 1fr; }
+            /* [신규] 반응형 */
+            .pain-scenario-grid { grid-template-columns: 1fr; }
+            .comparison-card { padding: 35px 25px; }
+            .comparison-card h3 { font-size: 1.6rem; }
+            .process-image { height: 200px; }
+            .case-study-header { padding: 25px 30px; }
+            .case-study-header h3 { font-size: 1.6rem; }
+            .case-study-body { padding: 30px 20px; }
+            .case-study-image { height: 300px; }
+            .faq-section { padding: 0 20px 80px; }
+            .faq-question { padding: 20px; font-size: 1.05rem; }
+            .faq-answer { padding: 0 20px 20px; font-size: 0.95rem; }
+            .timeline-item:nth-child(odd) .timeline-content, .timeline-item:nth-child(even) .timeline-content { width: calc(100% - 60px); margin-left: 60px; padding: 25px;} 
+            .timeline::before { left: 30px; } 
+            .timeline-dot { left: 30px; } 
+            .real-review-grid { grid-template-columns: 1fr; } 
+            .chat-bubble { font-size: 0.8rem; padding: 8px 12px; max-width: 90%; }
+            .review-customer { font-size: 1rem; }
+            .review-car { font-size: 0.85rem; }
+            .review-result-text { font-size: 0.9rem; }
+            .review-highlight { font-size: 1rem; }
+            .floating-cta { bottom: 20px; right: 20px; }
+            .map-container { min-height: 500px; height: auto; overflow: visible; }
+            .kakao-map-mobile { min-height: 500px !important; }
+        }
+        @media (max-width: 480px) {
+            body { font-size: 14px; }
+            .hero { min-height: 550px; }
+            .hero h1 { font-size: 1.5rem; line-height: 1.4; }
+            .hero .highlight { font-size: 1.7rem; margin: 12px 0; }
+            .hero-subtitle { font-size: 1rem; }
+            .hero p { font-size: 0.9rem; margin-bottom: 30px; }
+            .hero-badge { font-size: 0.7rem; padding: 8px 18px; letter-spacing: 2px; }
+            .cta-button-primary { padding: 16px 30px; font-size: 1rem; }
+            .logo { font-size: 1.2rem; letter-spacing: 1px; }
+            .nav-phone { font-size: 0.75rem; padding: 7px 12px; gap: 5px; }
+            .nav-cta-button { font-size: 0.8rem; padding: 8px 15px; }
+            .section-title { font-size: 1.5rem; }
+            .section-subtitle { font-size: 0.9rem; }
+            .section-badge { font-size: 0.7rem; padding: 6px 15px; }
+            .expert-section, .story-section, .timeline-section, .services-section, .problem-section, .positioning-section, .solution-section, .benefits-section, .gallery-section, .testimonial-section, .location-section, .final-cta-section, .comparison-section, .process-section, .faq-section { padding: 60px 15px; } 
+            .expert-text h2 { font-size: 1.6rem; }
+            .expert-name { font-size: 1.5rem; }
+            .expert-credentials li { font-size: 0.9rem; padding: 12px 0; }
+            .expert-description { font-size: 0.9rem; padding: 20px; line-height: 1.8; }
+            .story-quote { font-size: 0.95rem; padding: 25px 20px; line-height: 1.8; }
+            .story-highlight { padding: 2px 8px; font-size: 0.95rem; }
+            .timeline-year { font-size: 1.4rem; }
+            .timeline-description { font-size: 0.85rem; }
+            .timeline-content { padding: 25px; }
+            .service-card { padding: 30px 25px; }
+            .service-card h3 { font-size: 1.2rem; }
+            .service-list li { font-size: 0.85rem; }
+            .problem-card { padding: 30px 20px; }
+            .problem-icon { font-size: 2.5rem; }
+            .problem-card h3 { font-size: 1.2rem; }
+            .problem-card p { font-size: 0.85rem; }
+            .pain-point { padding: 25px 20px; }
+            .pain-point h3 { font-size: 1.4rem; }
+            .pain-point li { font-size: 0.9rem; padding-left: 35px; }
+            .positioning-section { padding: 60px 20px; }
+            .positioning-content h3 { font-size: 1.5rem; }
+            .positioning-content p { font-size: 0.9rem; }
+            .solution-text h3 { font-size: 1.5rem; }
+            .solution-text p { font-size: 0.9rem; }
+            .solution-features { padding: 25px 20px; }
+            .solution-features li { font-size: 0.9rem; padding: 12px 0 12px 40px; }
+            .solution-features li::before { font-size: 1.5rem; }
+            .solution-image-container { height: 300px; }
+            .benefits-box { padding: 50px 30px; }
+            .benefits-title { font-size: 1.8rem; margin-bottom: 40px; }
+            .benefit-item { padding: 25px 15px; }
+            .benefit-icon { font-size: 2rem; }
+            .benefit-text { font-size: 0.95rem; }
+            .gallery-grid { gap: 25px; }
+            .gallery-label { font-size: 0.85rem; padding: 8px 20px; top: 20px; left: 20px; }
+            .testimonial-card { padding: 30px 25px; }
+            .stars { font-size: 1.1rem; }
+            .testimonial-text { font-size: 0.9rem; line-height: 1.8; }
+            .author-avatar { width: 50px; height: 50px; font-size: 1.2rem; }
+            .author-info h4 { font-size: 0.95rem; }
+            .author-info p { font-size: 0.8rem; }
+            .real-review-card { padding: 20px; }
+            .location-info { padding: 30px 20px; }
+            .location-info h3 { font-size: 1.5rem; }
+            .info-item { margin-bottom: 20px; padding-bottom: 20px; }
+            .info-icon { font-size: 1.2rem; }
+            .info-text h4 { font-size: 0.9rem; }
+            .info-text p { font-size: 0.85rem; }
+            .map-container { min-height: 500px; height: auto; overflow: visible; }
+            .kakao-map-mobile { min-height: 500px !important; }
+            .cta-content h2 { font-size: 1.8rem; }
+            .cta-content p { font-size: 0.95rem; /* 수정: 가장 작은 화면 폰트 조정 */ margin-bottom: 40px; line-height: 1.8; }
+            footer { padding: 50px 20px; }
+            footer .logo { font-size: 1.8rem; }
+            footer p { font-size: 0.85rem; line-height: 1.8; }
+            /* [신규] 반응형 */
+            .pain-card h4 { font-size: 1.3rem; }
+            .pain-card p { font-size: 0.9rem; }
+            .comparison-card h3 { font-size: 1.4rem; }
+            .comparison-card p { font-size: 0.9rem; }
+            .process-text h4 { font-size: 1.3rem; }
+            .process-text p { font-size: 0.9rem; }
+            .case-study-header h3 { font-size: 1.4rem; }
+            .case-study-info p { font-size: 0.9rem; }
+            .faq-question { font-size: 1rem; }
+            .faq-answer { font-size: 0.95rem; } 
+            .chat-bubble { font-size: 0.85rem; padding: 10px 14px; }
+            .review-customer { font-size: 1.1rem; }
+            .review-result-text { font-size: 0.95rem; }
+            .floating-cta .cta-button-primary { padding: 14px 25px; font-size: 0.9rem; }
+        }
+        @media (max-width: 360px) {
+            .hero h1 { font-size: 1.3rem; }
+            .hero .highlight { font-size: 1.5rem; }
+            .hero p { font-size: 0.85rem; }
+            .hero-badge { font-size: 0.65rem; padding: 7px 15px; }
+            .logo { font-size: 1.1rem; }
+            .nav-phone { font-size: 0.7rem; padding: 6px 10px; }
+            .cta-button-primary { padding: 14px 25px; font-size: 0.9rem; }
+            .section-title { font-size: 1.3rem; }
+            .section-subtitle { font-size: 0.85rem; }
+            .benefits-title { font-size: 1.5rem; }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">강남아쿠엠</a>
+            <div class="nav-contact">
+                <a href="tel:010-5232-4090" class="nav-phone">
+                    📞 010-5232-4090
+                </a>
+                <button class="nav-cta-button" 
+                    data-tally-open="311xjM" 
+                    data-tally-emoji-text="👋" 
+                    data-tally-emoji-animation="wave"
+                    data-tally-hidden-fields='{"cta_location":"네비게이션_버튼"}'>
+                    무료 상담 신청
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 플로팅 CTA 버튼 -->
+    <div class="floating-cta">
+        <button class="cta-button-primary" 
+            data-tally-open="311xjM" 
+            data-tally-emoji-text="👋" 
+            data-tally-emoji-animation="wave"
+            data-tally-hidden-fields='{"cta_location":"플로팅_CTA_버튼"}'>
+            무료 상담 신청하기
+        </button>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge fade-in"><span id="heroYears">28</span>년 경력 전문가</div>
+            <h1 class="fade-in-up">
+                가죽시트 교체 견적
+                <span class="highlight">500만원,</span>
+                아직도 통째로 교체하세요?
+            </h1>
+            <p class="hero-subtitle fade-in">찢어지고 벗겨진 시트 때문에 차 탈 때마다 스트레스받으셨습니까?</p>
+            <p class="fade-in-up">
+                교체 비용의 1/5, 단 3시간 시공으로<br>
+                <span id="heroYears2">28</span>년 경력 전문가가 새 차의 품격을 되찾아드립니다.
+            </p>
+            <button class="cta-button-primary fade-in-up" 
+                data-tally-open="311xjM" 
+                data-tally-emoji-text="👋" 
+                data-tally-emoji-animation="wave"
+                data-tally-hidden-fields='{"cta_location":"히어로_버튼"}'>
+                무료 상담 신청하기 →
+            </button>
+        </div>
+    </section>
+
+    <section class="expert-section">
+        <div class="expert-content">
+            <div class="expert-text slide-in-left">
+                <h2>
+                    28년간 한 길만 걸어온<br>
+                    김동근 대표를 소개합니다
+                </h2>
+                <div class="expert-name">김동근 (Dong-Geun Kim)</div>
+                <ul class="expert-credentials">
+                    <li>1997년 창업, <span id="expertYears1">28</span>년 가죽 복원 전문</li>
+                    <li>누적 10,000대+ 차량 복원 경험</li>
+                    <li>고급 수입차 전문 (벤츠, BMW, 아우디, 포르쉐 등)</li>
+                    <li>500가지+ 가죽 종류 데이터 보유</li>
+                    <li>업계 최초 '180일 품질 보증' 제공</li>
+                </ul>
+                <p class="expert-description">
+                    1987년 롯데칠성에 입사하여 영업사원으로 일하다가, 1992년에 매니저로 진급할 정도로 실력을 인정받았습니다. 최고의 영업사원은 '고객 만족'이 전부임을 압니다.
+                    부모님께 물려받은 손재능을 살려 1997년 창업한 이후, 저는 차가 아니라 <strong>'고객의 만족감'</strong>과 <strong>'차량의 품격'</strong>을 복원한다는 신념으로 일해왔습니다.
+                </p>
+            </div>
+            <div class="expert-image slide-in-right">
+                <img src="https://i.postimg.cc/28gxsFxY/1.jpg" alt="김동근 대표 프로필 사진">
+            </div>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">Brand Story</div>
+                <h2 class="section-title fade-in-up">강남아쿠엠의 철학</h2>
+                <p class="section-subtitle fade-in">복원의 개념은 건축물이나 유물을 원상태로 되돌리는 것을 말하나, 크게는 과거 문화를 재구성하는 것을 포함합니다.</p>
+            </div>
+            <div class="story-quote fade-in">
+                자동차 가죽 시트에서의 복원은 아주 작은 스크래치에서부터 큰 찢어짐 등을 원 상태로 돌린다는 의미를 갖고 있으며, 
+                결코 쉬운 작업이 아닙니다.<br><br>
+                브랜드 네임, 아쿠엠은 인체에 해롭지 않은 소재로 자동차에 작업을 해주는 사람을 뜻합니다. 
+                복원에 있어 깔끔하게 복원하는 것이 가장 중요하나, 더욱 중요한 것은 그것을 사용하는 <span class="story-highlight">주체가 사람이기 때문입니다.</span><br><br>
+                <span class="story-highlight">그 차는 사장님뿐만 아니라, 사랑하는 아이와 가족이 함께 타는 공간입니다.</span> 
+                싼 공업용 재료로 당장 덮는 것은 제 '<span id="storyYears">28</span>년' 이름에 맞지 않습니다. 인체에 무해한 재료로 정확하게 복원하는 것이 강남아쿠엠의 차별화된 기술이자 철학입니다.
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">History</div>
+                <h2 class="section-title fade-in-up"><span id="timelineYears">28</span>년은 숫자가 아닌<br>'기술력의 증명'입니다</h2>
+                <p class="section-subtitle fade-in">
+                    <span id="timelineYears_sub">28</span>년은 단순한 시간이 아닙니다.<br>
+                    10,000대 이상의 차량, 500가지 이상의 가죽 종류(나파, 다코타, 메리노...)를 직접 만져본 '경험 데이터'입니다.
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">1997</div> <div class="timeline-description"> 강남 아쿠엠 첫 창업<br> 자동차 시트 복원 기술 보유 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2000</div> <div class="timeline-description"> 자동차 부분 리폼 기술 보유<br> 자동차 전동시트 기술 보유 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2004</div> <div class="timeline-description"> 플라스틱 복원 기술 보유<br> 천장 늘어짐 복원 기술 보유 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2008</div> <div class="timeline-description"> 대시보드 관련 기술 보유<br> 열선시트 복원 기술 보유 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2010</div> <div class="timeline-description"> 강남아쿠엠 독자적인 복원 기술 개발<br> 차량 시트 전반적인 복원 기술 보유<br> 가죽 복원 기술 작업 교육/육성 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2015</div> <div class="timeline-description"> 버튼 스크래치 관련 독자적 기술 보유<br> 버튼 고착업 복원 기술 보유<br> 콘솔박스 복원 기술 보유 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2019</div> <div class="timeline-description"> 강남아쿠엠 이전<br> 차량 가죽 복원 전문 기술 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year">2020</div> <div class="timeline-description"> 가죽시트 관련 복원 기술 최다 보유 </div> </div> <div class="timeline-dot"></div> </div>
+                <div class="timeline-item fade-in"> <div class="timeline-content"> <div class="timeline-year"><span id="currentYear">2025</span> ing...</div> <div class="timeline-description"> <span id="timelineYears2">28</span>년 경력의 베테랑 복원 기술 소유<br> 일본, 수입 차량 전 종목 복원 기술 소유 </div> </div> <div class="timeline-dot"></div> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in" style="background: rgba(201, 169, 97, 0.3);">Services</div>
+                <h2 class="section-title fade-in-up" style="color: white;">사업 분야</h2>
+                <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.9);"> 인체에 무해한 재료로 완벽하게 복원하는 것을 원칙으로 차량 실내 복원에 대한 아래와 같은 일들을 하고 있습니다. </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in"> <h3>복원</h3> <ul class="service-list"> <li>버튼 스크래치/균열</li> <li>플라스틱</li> <li>천장 늘어짐</li> <li>담배구멍</li> <li>헤드 가죽</li> <li>콘솔 박스</li> </ul> </div>
+                <div class="service-card fade-in"> <h3>교체</h3> <ul class="service-list"> <li>가죽시트</li> <li>레시트</li> <li>케톱 가죽</li> <li>기본형 가죽</li> <li>콘솔박스</li> </ul> </div>
+                <div class="service-card fade-in"> <h3>수리/장착</h3> <ul class="service-list"> <li>전동시트</li> <li>열선시트</li> <li>통풍시트</li> </ul> </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">Comparison</div>
+                <h2 class="section-title fade-in-up">왜 '저가 복원'이나 '센터 교체'가<br>정답이 아닐까요?</h2>
+                <p class="section-subtitle fade-in">소중한 차를 '실험용'으로 만드시겠습니까?</p>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-card villain fade-in">
+                    <h3>Villain 1: '야매' 복원 (저가 업체)</h3>
+                    <p>당장 30% 싸 보이지만, 3개월 뒤 100% 다시 찢어집니다.</p>
+                    <p class="reason"><strong>이유:</strong> 가죽의 구조(결)를 복원하는 것이 아니라, 순간적으로 색깔 있는 '본드'를 겉에 '때우기' 때문입니다. 열과 마찰에 바로 갈라집니다.</p>
+                </div>
+                <div class="comparison-card villain fade-in">
+                    <h3>Villain 2: 'DIY 복원 키트'</h3>
+                    <p>복원이 아니라 '낙서'입니다. 3만원으로 300만원짜리 시트를 망칩니다.</p>
+                    <p class="reason"><strong>이유:</strong> 차량 시트는 미세하게 색이 다릅니다. 1:1 조색 기술 없이 기성품 물감을 바르는 것은 흰 셔츠에 잉크를 쏟는 것과 같습니다.</p>
+                </div>
+                <div class="comparison-card villain fade-in">
+                    <h3>Villain 3: '공식 서비스센터'</h3>
+                    <p>그들은 '복원 전문가'가 아닌 '교체 전문가'입니다.</p>
+                    <p class="reason"><strong>이유:</strong> 10만원에 복원될 손상도, 그들은 '매뉴얼'에 따라 "500만원짜리 시트 전체 교체"만 강요합니다. 멀쩡한 부분까지 교체할 필요가 없습니다.</p>
+                </div>
+            </div>
+            <div class="urgency-box fade-in" style="margin-top: 80px; background: var(--primary-dark); border-color: var(--primary-gold);">
+                <h3 style="color: var(--primary-gold);">Hero: 강남아쿠엠 (김동근 대표)</h3>
+                <p style="color: white;">강남아쿠엠은 '때우지' 않고, '낙서하지' 않고, '강요하지' 않습니다.<br><span class="highlight" style="font-size: 1.2rem; color: var(--primary-gold);">'<span id="compHeroYears">28</span>년 경력'으로 '진짜 복원'을 합니다.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">Process</div>
+                <h2 class="section-title fade-in-up">강남아쿠엠의 '4단계 명품 복원 공정'을<br>전격 공개합니다</h2>
+                <p class="section-subtitle fade-in">'때우는' 작업과 '복원' 작업이 어떻게 다른지 눈으로 확인하십시오.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card fade-in">
+                    <div class="process-image">
+                        <img src="https://i.postimg.cc/5yrkkXgb/Image-fx-22.jpg" alt="클리닝/샌딩 작업 과정">
+                    </div>
+                    <div class="process-text">
+                        <h4>Step 1: 유분/오염 제거 및 샌딩</h4>
+                        <p>단순 클리닝이 아닙니다. 복원제가 가죽 깊숙이 스며들도록 표면을 완벽하게 준비하는 '기초 공사'입니다.</p>
+                    </div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-image">
+                        <img src="https://i.postimg.cc/Dwx5CJz8/Image-fx-25.jpg" alt="가죽 구조 복원 과정">
+                    </div>
+                    <div class="process-text">
+                        <h4>Step 2: 가죽 구조 복원 (핵심)</h4>
+                        <p>찢어진 부분은 '가죽 전용 퍼티'로 결을 살려 메우고, 벗겨진 부분은 '프라이머'로 가죽 본연의 질감을 되살립니다.</p>
+                    </div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-image">
+                        <img src="https://i.postimg.cc/FssLTPky/Image-fx-31.jpg" alt="1:1 맞춤 조색 작업">
+                    </div>
+                    <div class="process-text">
+                        <h4>Step 3: 1:1 맞춤 조색</h4>
+                        <p>차량 연식과 상태에 따른 미세한 변색까지 고려하여 '<span id="processYears1">28</span>년 데이터'로 정확히 조색합니다. DIY와 비교 불가한 이유입니다.</p>
+                    </div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-image">
+                        <img src="https://i.postimg.cc/Hn2HR4KK/Image-fx-26.jpg" alt="특수 열처리 및 보호 코팅">
+                    </div>
+                    <div class="process-text">
+                        <h4>Step 4: 특수 열처리 및 보호 코팅</h4>
+                        <p>복원된 부위에 '특수 마감재'를 도포하고 열처리하여, 복원 부위가 다시 찢어지거나 벗겨지지 않도록 내구성을 극대화합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in" style="background: rgba(201, 169, 97, 0.3);">Our Solution</div>
+                <h2 class="section-title fade-in-up" style="color: white;"><span id="solutionYears">28</span>년 경력의 완벽한 복원</h2>
+                <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.9);"> 강남아쿠엠의 독자적 기술로 새것처럼 되살립니다 </p>
+            </div>
+            <div class="solution-content">
+                <div class="solution-image-container scale-in">
+                    <img src="https://i.postimg.cc/Xv33gPXD/Best-Before-After.jpg" alt="Best Before & After Shot" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="solution-text fade-in">
+                    <h3>💎 김동근 대표의 약속</h3>
+                    <p> 단순히 때우거나 덮는 것이 아닙니다. 1997년부터 <span id="solutionYears2">28</span>년 경력의 김동근 대표가 손상된 가죽의 구조부터 복원하여 원래의 질감과 색상을 되살리는 독자적 기술을 보유하고 있습니다. </p>
+                    <ul class="solution-features">
+                        <li><strong>시트 교체 비용의 1/5 가격</strong>으로 새것처럼 복원</li>
+                        <li><strong>평균 2-3시간</strong> 당일 시공으로 바로 사용 가능</li>
+                        <li><strong><span id="solutionYears3">28</span>년 경력</strong> 전문가의 1:1 맞춤 복원</li>
+                        <li><strong>인체에 무해한 재료</strong> 사용으로 가족의 안전 보장</li>
+                        <li><strong>수입차 전문</strong> 벤츠, BMW, 아우디, 포르쉐 등 고급 차량 특화</li>
+                        <li>가죽시트, 천장, 핸들, 콘솔박스 등 <strong>실내 전체 복원</strong></li>
+                        <li>찢어짐, 벗겨짐, 변색, 담배 구멍, 스크래치 등 <strong>모든 손상 해결</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">Portfolio</div>
+                <h2 class="section-title fade-in-up">말로 하지 않습니다.<br>결과로 보여드립니다.</h2>
+                <p class="section-subtitle fade-in">실제 복원 사례 - Case Study</p>
+            </div>
+            
+            <div class="case-study-card fade-in">
+                <div class="case-study-header"><h3>Case 1: [BMW 5시리즈] 운전석 옆구리 터짐 복원</h3></div>
+                <div class="case-study-body">
+                    <div class="case-study-grid">
+                        <div class="case-study-image">
+                            <img src="https://i.postimg.cc/V6JYSCdp/Image-fx-35.jpg" alt="BMW 운전석 옆구리 터짐 Before">
+                            <h4>BEFORE</h4>
+                        </div>
+                        <div class="case-study-image after">
+                            <img src="https://i.postimg.cc/5t0JGCqs/Image-fx-36.jpg" alt="BMW 운전석 옆구리 복원 After">
+                            <h4>AFTER</h4>
+                        </div>
+                    </div>
+                    <div class="case-study-info">
+                        <p><strong>고객 문제:</strong> "운전석 옆구리(사이드 볼스터)가 터져서 탈 때마다 스펀지가 보이고 옷이 쓸려 스트레스였습니다."</p>
+                        <p><strong>솔루션:</strong> <span id="case1Years">28</span>년 경력 복원 (가죽 전용 퍼티 + 구조 복원) + 1:1 맞춤 조색</p>
+                        <p><strong>결과 (고객 이득):</strong> "센터 견적 300만원 나왔는데, <strong>단 3시간, 50만원</strong>에 감쪽같이 해결했습니다!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card fade-in">
+                <div class="case-study-header"><h3>Case 2: [포르쉐 파나메라] 핸들 가죽 벗겨짐/변색</h3></div>
+                <div class="case-study-body">
+                    <div class="case-study-grid">
+                        <div class="case-study-image">
+                            <img src="https://i.postimg.cc/pdpNktRg/Image-fx-37.jpg" alt="포르쉐 핸들 가죽 벗겨짐 Before">
+                            <h4>BEFORE</h4>
+                        </div>
+                        <div class="case-study-image after">
+                            <img src="https://i.postimg.cc/kGNLDJv5/Image-fx-38.jpg" alt="포르쉐 핸들 가죽 복원 After">
+                           <h4>AFTER</h4>
+                        </div>
+                    </div>
+                    <div class="case-study-info">
+                        <p><strong>고객 문제:</strong> "손톱과 땀으로 인해 핸들 상단 가죽이 벗겨지고 변색되어, 운전할 때마다 끈적이고 보기 흉했습니다."</p>
+                        <p><strong>솔루션:</strong> 표면 샌딩 및 유분 제거 + 베이지 컬러 1:1 맞춤 조색 + 특수 마감 코팅</p>
+                        <p><strong>결과 (고객 이득):</strong> "핸들 교체 비용 200만원 아꼈습니다. <strong>새 차 잡는 느낌</strong>이 그대로 살아났습니다."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-card fade-in">
+                <div class="case-study-header"><h3>Case 3: [벤츠 S클래스] 시트 담배 구멍</h3></div>
+                <div class="case-study-body">
+                    <div class="case-study-grid">
+                        <div class="case-study-image">
+                            <img src="https://i.postimg.cc/8CqYHJyz/Image-fx-39.jpg" alt="벤츠 시트 담배 구멍 Before">
+                           <h4>BEFORE</h4>
+                        </div>
+                        <div class="case-study-image after">
+                            <img src="https://i.postimg.cc/Z5QsbvzD/Image-fx-40.jpg" alt="벤츠 시트 담배 구멍 복원 After">
+                            <h4>AFTER</h4>
+                        </div>
+                    </div>
+                    <div class="case-study-info">
+                        <p><strong>고객 문제:</strong> "중고차를 샀는데 시트에 담배 구멍이 4곳이나 있어서, 차 팔 때 가격이 떨어질까 봐 고민이었습니다."</p>
+                        <p><strong>솔루션:</strong> 가죽 전용 퍼티로 구멍 메우기 + 구조 복원 + 검정색 조색 및 코팅</p>
+                        <p><strong>결과 (고객 이득):</strong> "4곳 전부 <strong>3시간, 80만원</strong>에 해결. 차 매매 가격 200만원 더 받았습니다!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: 120px;">
+                <div class="section-badge fade-in">Real Reviews</div>
+                <h2 class="section-title fade-in-up">실제 고객님들의 생생 후기</h2>
+                <p class="section-subtitle fade-in">카카오톡으로 받은 진짜 리얼 후기입니다</p>
+            </div>
+            <div class="real-review-grid">
+                <!-- 리뷰 1: BMW 운전석 복원 -->
+                <div class="real-review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-icon">💬</div>
+                        <div>
+                            <div class="review-customer">김○○ 고객님</div>
+                            <div class="review-car">BMW 5시리즈</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message customer">
+                        <div class="chat-bubble">
+                            BMW 운전석 옆구리가 완전 터져서 스펀지 다 보이는데 복원 가능할까요?ㅠㅠ<br>
+                            센터에서는 시트 통째로 교체해야 한대요...
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message business">
+                        <div class="chat-bubble">
+                            네! 사진으로 상태 확인해보겠습니다 😊
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message customer">
+                        <div class="chat-bubble">
+                            이 정도면 얼마나 나올까요?
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message business">
+                        <div class="chat-bubble">
+                            센터 견적 300만원 나오셨죠?<br>
+                            저희는 50만원에 당일 복원 가능합니다 👍
+                        </div>
+                    </div>
+                    
+                    <div class="review-divider"></div>
+                    
+                    <div class="review-result">
+                        <div class="review-result-text">
+                            "대표님 진짜 대박이에요!!!!!<br>
+                            어디가 터진 곳인지 1도 모르겠어요ㅋㅋㅋ<br>
+                            <span class="review-highlight">250만원 아낀 기분</span>입니다 감사합니다!!!"
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 리뷰 2: 포르쉐 핸들 복원 -->
+                <div class="real-review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-icon">💬</div>
+                        <div>
+                            <div class="review-customer">박○○ 고객님</div>
+                            <div class="review-car">포르쉐 파나메라</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message customer">
+                        <div class="chat-bubble">
+                            포르쉐 핸들 가죽이 손으로 만질 때마다 끈적거리고 벗겨져서요... 복원 되나요?
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message business">
+                        <div class="chat-bubble">
+                            네 가능합니다!<br>
+                            사진으로 상태 한번 보내주세요 📸
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message customer">
+                        <div class="chat-bubble">
+                            이 정도인데 얼마나 걸릴까요?
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message business">
+                        <div class="chat-bubble">
+                            2시간 30분 정도면 됩니다<br>
+                            베이지 색상 1:1 조색으로 완벽하게 복원해드릴게요!<br>
+                            비용은 40만원입니다
+                        </div>
+                    </div>
+                    
+                    <div class="review-divider"></div>
+                    
+                    <div class="review-result">
+                        <div class="review-result-text">
+                            "와... 이게 같은 핸들이 맞나요??<br>
+                            새 차 잡는 느낌 그대로예요ㄷㄷㄷ<br>
+                            핸들 교체 <span class="review-highlight">200만원 절약</span>했어요!<br>
+                            주변 포르쉐 오너들한테 소개 많이 하겠습니다!"
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 리뷰 3: 벤츠 담배 구멍 -->
+                <div class="real-review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-icon">💬</div>
+                        <div>
+                            <div class="review-customer">이○○ 고객님</div>
+                            <div class="review-car">벤츠 S클래스</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message customer">
+                        <div class="chat-bubble">
+                            중고차를 샀는데 시트에 담배 구멍이 4군데나 있어요ㅠㅠ<br>
+                            이것도 복원 가능한가요?
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message business">
+                        <div class="chat-bubble">
+                            네! 담배 구멍 복원 자주 하고 있습니다<br>
+                            위치랑 크기 사진으로 보내주시겠어요?
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message customer">
+                        <div class="chat-bubble">
+                            구멍 크기는 작은데 4곳이라서...<br>
+                            비용이 좀 나올까봐 걱정이네요
+                        </div>
+                    </div>
+                    
+                    <div class="chat-message business">
+                        <div class="chat-bubble">
+                            4군데 전부 해서 80만원입니다<br>
+                            3시간이면 완료되고요!<br>
+                            검정 가죽이라 이색 걱정 없으십니다 👌
+                        </div>
+                    </div>
+                    
+                    <div class="review-divider"></div>
+                    
+                    <div class="review-result">
+                        <div class="review-result-text">
+                            "대표님 진짜 신기하네요😳😳<br>
+                            어디에 구멍 있었는지 저도 못 찾겠어요ㅋㅋ<br>
+                            차 매매가도 최소 <span class="review-highlight">200만원은 더 받을 것 같습니다</span><br>
+                            정말 감사합니다👍👍👍"
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="urgency-box fade-in">
+                <h3>왜 혜택을 '한정'할까요?</h3>
+                <p>
+                    강남아쿠엠은 공장처럼 찍어내는 '야매' 업체가 아닙니다.<br>
+                    김동근 대표가 '<span id="urgencyYears">28</span>년 경력'을 걸고 직접 진단하고, 조색하고, 시공합니다.<br>
+                    <span class="highlight">완벽한 품질을 위해, 하루 3대만 예약받습니다.</span><br>
+                    지금 바로 예약 가능한 시간을 확인하세요.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">Location</div>
+                <h2 class="section-title fade-in-up">찾아오시는 길</h2>
+            </div>
+            <div class="location-content">
+                <div class="location-info fade-in">
+                    <h3>강남아쿠엠 본점</h3>
+                    <div class="info-item"> <div class="info-icon">📍</div> <div class="info-text"> <h4>주소</h4> <p>서울특별시 서초구 언남길 60 창주빌딩 1층<br>(양재동 307)</p> </div> </div>
+                    <div class="info-item"> <div class="info-icon">📞</div> <div class="info-text"> <h4>상담 문의</h4> <p>010-5232-4090<br>카톡 ID: aquam232</p> </div> </div>
+                    <div class="info-item"> <div class="info-icon">🕐</div> <div class="info-text"> <h4>영업시간</h4> <p>평일 10:00 - 19:00<br>토요일 10:00 - 15:00<br>일요일/공휴일 휴무</p> </div> </div>
+                    <div class="info-item"> <div class="info-icon">🚗</div> <div class="info-text"> <h4>주차 안내</h4> <p>건물 앞 무료 주차 가능<br>대중교통 이용 시 양재역 도보 10분</p> </div> </div>
+                </div>
+                <div class="map-container fade-in">
+                    <!-- PC: 카카오맵 iframe -->
+                    <iframe class="kakao-map-desktop" src="https://map.kakao.com/link/map/강남아쿠엠,37.4714,127.0399" width="100%" height="100%" style="border:none;" allowfullscreen></iframe>
+                    
+                    <!-- 모바일: 지도 보기 버튼 -->
+                    <div class="kakao-map-mobile" style="display: none;">
+                        <div style="width: 100%; height: auto; min-height: 450px; background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; padding: 50px 30px;">
+                            <div style="font-size: 3rem;">🗺️</div>
+                            <h4 style="font-size: 1.3rem; color: var(--primary-dark); margin: 0;">강남아쿠엠 위치</h4>
+                            <p style="color: #666; text-align: center; line-height: 1.8; margin: 10px 0;">서울특별시 서초구 언남길 60<br>창주빌딩 1층 (양재동 307)</p>
+                            <a href="https://map.kakao.com/link/map/강남아쿠엠,37.4714,127.0399" target="_blank" style="display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, var(--primary-gold) 0%, var(--luxury-brown) 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3); margin-bottom: 10px;">
+                                카카오맵으로 위치 보기
+                            </a>
+                            <a href="https://map.naver.com/p/entry/place/31761505" target="_blank" style="display: inline-block; padding: 15px 35px; background: #03C75A; color: white; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; box-shadow: 0 10px 30px rgba(3, 199, 90, 0.3); margin-bottom: 20px;">
+                                네이버지도로 위치 보기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    // 모바일 감지 및 지도 표시 전환
+                    function detectMobile() {
+                        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+                        const desktopMap = document.querySelector('.kakao-map-desktop');
+                        const mobileMap = document.querySelector('.kakao-map-mobile');
+                        
+                        if (isMobile) {
+                            desktopMap.style.display = 'none';
+                            mobileMap.style.display = 'block';
+                        } else {
+                            desktopMap.style.display = 'block';
+                            mobileMap.style.display = 'none';
+                        }
+                    }
+                    
+                    detectMobile();
+                    window.addEventListener('resize', detectMobile);
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge fade-in">FAQ</div>
+                <h2 class="section-title fade-in-up">아직도 궁금하신가요?</h2>
+                <p class="section-subtitle fade-in">상담 전, 고객님들이 가장 많이 묻는 질문입니다.</p>
+            </div>
+            <div class="faq-list fade-in">
+                <div class="faq-item">
+                    <div class="faq-question">Q. 복원하면 금방 다시 찢어지거나 벗겨지지 않나요?</div>
+                    <div class="faq-answer">
+                        <p>A: 아닙니다. '야매' 복원은 겉만 '때우기' 때문에 3개월도 못 가지만, 강남아쿠엠은 가죽 구조부터 복원하고 특수 보호 코팅으로 마감합니다. 순정 시트와 동일한 내구성을 보장하며, 이를 증명하기 위해 <strong style="color: var(--luxury-brown);">업계 최고 수준인 '180일 품질보증'</strong>을 제공합니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 시공 시간은 얼마나 걸리나요? 당일 출고 가능한가요?</div>
+                    <div class="faq-answer">
+                        <p>A: 네, 대부분 당일 출고됩니다. 손상 범위에 따라 다르지만, 핸들 복원이나 부분 시트 복원(찢어짐, 담배 구멍 등)은 <strong style="color: var(--luxury-brown);">평균 2~3시간</strong>이면 완료됩니다. 시트 전체 복원의 경우 1일 정도 소요될 수 있습니다. 폼으로 사진을 보내주시면 더 정확한 시간을 안내해 드립니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 색깔이 미세하게 다르면 어떡하죠? (이색 현상)</div>
+                    <div class="faq-answer">
+                        <p>A: <span id="faqYears1">28</span>년 경력의 가장 핵심 기술이 바로 '조색'입니다. <strong>고객님의 차량 연식, 햇빛 노출에 따른 미세한 변색까지 고려</strong>하여 1:1 맞춤 조색을 진행합니다. DIY 키트나 초보 업체가 절대 흉내 낼 수 없는 강남아쿠엠만의 기술이며, 이색 현상 걱정은 안 하셔도 됩니다.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 벤츠, BMW, 포르쉐 같은 수입차도 가능한가요?</div>
+                    <div class="faq-answer">
+                        <p>A: 네, <strong style="color: var(--luxury-brown);">강남아쿠엠은 수입차 복원 전문입니다.</strong> 지난 <span id="faqYears2">28</span>년간 벤츠, BMW, 아우디, 포르쉐, 렉서스 등 수많은 수입차의 나파, 메리노, 다코타 가죽을 다뤄왔습니다. 공식 센터의 1/5 가격으로 동일한, 혹은 그 이상의 품질을 경험하실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta-section" id="consultation">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="fade-in">"내 차도 가능할까?"<br>고민하는 순간에도 예약은 마감됩니다.</h2>
+                <p class="fade-in"> 지금 바로 손상 부위 사진만 보내주시면 <span style="color: var(--primary-gold); font-weight: 700;">'<span id="ctaYears">28</span>년 경력 전문가'가 직접</span><br>정확한 견적과 복원 가능 여부를 즉시 안내해드립니다. (상담 100% 무료) </p>
+                <button class="cta-button-primary fade-in" 
+                    data-tally-open="311xjM" 
+                    data-tally-emoji-text="👋" 
+                    data-tally-emoji-animation="wave"
+                    data-tally-hidden-fields='{"cta_location":"최종CTA_버튼"}'>
+                    무료 견적 받기 →
+                </button>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin-top: 30px; text-align: center; line-height: 1.9;"> ※ 개인정보는 상담 목적으로만 사용되며, 안전하게 보호됩니다.<br> 평균 30분 이내 연락드립니다. (영업시간 내) </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">강남아쿠엠</a>
+            <p style="font-size: 1.2rem; font-weight: 600; margin: 25px 0; color: var(--primary-gold);"> 김동근 대표의 <span id="footerYears">28</span>년 경력 가죽시트 복원 전문 </p>
+            <p>상담 문의: 010-5232-4090 | 카톡: aquam232</p>
+            <p>영업시간: 평일 10:00 - 19:00 / 토요일 10:00 - 15:00</p>
+            <p>주소: 서울특별시 서초구 언남길 60 창주빌딩 1층 (양재동 307)</p>
+            <button class="cta-button-primary" style="margin: 30px 0;"
+                data-tally-open="311xjM" 
+                data-tally-emoji-text="👋" 
+                data-tally-emoji-animation="wave"
+                data-tally-hidden-fields='{"cta_location":"푸터_서비스_버튼"}'>
+                무료 상담 받기
+            </button>
+            <p style="margin-top: 35px; opacity: 0.6; font-size: 1rem;"> © <span id="footerCurrentYear">2025</span> 강남아쿠엠 (Gangnam Aquem). All rights reserved. </p> 
+        </div>
+    </footer>
+
+    <script>
+        // 페이지 로드 시 맨 위로 스크롤 (URL 해시 무시)
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+        
+        window.addEventListener('load', () => {
+            // URL 해시 제거
+            if (window.location.hash) {
+                history.replaceState(null, null, window.location.pathname + window.location.search);
+            }
+            // 강제로 맨 위로 스크롤
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+            }, 0);
+        });
+
+        // 년도 자동 계산
+        function calculateYears() {
+            const startYear = 1997;
+            const currentYear = new Date().getFullYear();
+            const years = currentYear - startYear;
+            
+            const yearElements = [ 'heroYears', 'heroYears2', 'timelineYears', 'timelineYears_sub', 'timelineYears2', 'solutionYears', 'solutionYears2', 'solutionYears3', 'galleryYears', 'reviewYears', 'reviewYears2', 'footerYears', 'expertYears1', 'painPointYears', 'compHeroYears', 'processYears1', 'case1Years', 'urgencyYears', 'faqYears1', 'faqYears2', 'ctaYears' ];
+            yearElements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.textContent = years;
+            });
+            
+            // currentYear 요소 업데이트
+            const currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) currentYearElement.textContent = currentYear;
+            
+            const footerCurrentYearElement = document.getElementById('footerCurrentYear');
+            if (footerCurrentYearElement) footerCurrentYearElement.textContent = currentYear;
+        }
+        calculateYears();
+
+        // Scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            const elements = document.querySelectorAll('.fade-in, .fade-in-up, .slide-in-left, .slide-in-right, .scale-in');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.85) {
+                    el.style.animationPlayState = 'running';
+                }
+            });
+        });
+
+        // FAQ toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    item.classList.toggle('active');
+                });
+            });
+        });
+
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const navElement = document.querySelector('nav');
+                    const navHeight = navElement ? navElement.offsetHeight : 0;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight; 
+                    
+                    window.scrollTo({ 
+                        top: targetPosition, 
+                        behavior: 'smooth' 
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
