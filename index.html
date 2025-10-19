@@ -6,6 +6,39 @@
     <title>강남아쿠엠 | 김동근 대표의 28년 경력 가죽시트 복원 전문</title>
     <meta name="description" content="1997년부터 28년 경력의 김동근 대표가 찢어지고 벗겨진 가죽시트를 새것처럼 완벽하게 복원합니다. 강남아쿠엠의 특화된 기술로 차량 가치를 지키세요.">
     
+    <!-- 페이지 로드 시 맨 위로 스크롤 강제 -->
+    <script>
+        // 즉시 실행: 스크롤 복원 비활성화
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        // URL 해시 제거 및 맨 위로
+        if (window.location.hash) {
+            history.replaceState(null, null, window.location.pathname);
+        }
+        window.scrollTo(0, 0);
+        
+        // hashchange 이벤트 차단
+        window.addEventListener('hashchange', (e) => {
+            e.preventDefault();
+            history.replaceState(null, null, window.location.pathname);
+            return false;
+        });
+        
+        // 스크롤 이벤트 모니터링 및 차단 (처음 1초간)
+        let preventScroll = true;
+        setTimeout(() => {
+            preventScroll = false;
+        }, 1000);
+        
+        window.addEventListener('scroll', (e) => {
+            if (preventScroll && window.scrollY > 100) {
+                e.preventDefault();
+                window.scrollTo(0, 0);
+            }
+        }, { passive: false });
+    </script>
+    
     <!-- Tally 스크립트 추가 -->
     <script src="https://tally.so/widgets/embed.js"></script>
     
@@ -13,6 +46,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: auto; } /* 부드러운 스크롤 비활성화 */
+        html, body { scroll-padding-top: 0; }
         :root {
             --primary-gold: #c9a961; --primary-dark: #1a1a1a; --secondary-dark: #2d2d2d;
             --accent-gold: #e8d5a8; --text-light: #f5f5f5; --text-dark: #2c2c2c;
@@ -168,7 +203,7 @@
         .expert-credentials li { padding: 18px 0; font-size: 1.25rem; color: var(--text-dark); border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; gap: 18px; font-weight: 500; }
         .expert-credentials li:last-child { border-bottom: none; }
         .expert-credentials li::before { content: '✓'; color: var(--primary-gold); font-weight: bold; font-size: 1.8rem; min-width: 30px; }
-        .expert-image { position: relative; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.25); border: 5px solid var(--primary-gold); transition: all 0.5s ease; height: 750px; } 
+        .expert-image { position: relative; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.25); border: 5px solid var(--primary-gold); transition: all 0.5s ease; height: 800px; } 
         .expert-image:hover { transform: translateY(-10px); box-shadow: 0 50px 120px rgba(0,0,0,0.35); }
         .expert-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; } 
         .expert-image:hover img { transform: scale(1.05); }
@@ -307,7 +342,7 @@
         /* 반응형 */
         @media (max-width: 1024px) {
             .expert-content, .location-content { grid-template-columns: 1fr; gap: 60px; }
-            .expert-image { height: 550px; }
+            .expert-image { height: 600px; }
             .solution-image-container { height: 500px; }
             .hero h1 { font-size: 3rem; }
             .hero .highlight { font-size: 3.5rem; }
@@ -497,7 +532,7 @@
 
     </style>
 </head>
-<body>
+<body onload="window.scrollTo(0,0);">
     <nav>
         <div class="nav-container">
             <a href="#" class="logo">강남아쿠엠</a>
@@ -557,7 +592,7 @@
                     28년간 한 길만 걸어온<br>
                     김동근 대표를 소개합니다
                 </h2>
-                <div class="expert-name">김동근 (Dong-Geun Kim)</div>
+                <div class="expert-name">복원박사 김동근</div>
                 <ul class="expert-credentials">
                     <li>1997년 창업, <span id="expertYears1">28</span>년 가죽 복원 전문</li>
                     <li>누적 10,000대+ 차량 복원 경험</li>
@@ -992,8 +1027,8 @@
                     <div class="info-item"> <div class="info-icon">🚗</div> <div class="info-text"> <h4>주차 안내</h4> <p>건물 앞 무료 주차 가능<br>대중교통 이용 시 양재역 도보 10분</p> </div> </div>
                 </div>
                 <div class="map-container fade-in">
-                    <!-- PC: 카카오맵 iframe -->
-                    <iframe class="kakao-map-desktop" src="https://map.kakao.com/link/map/강남아쿠엠,37.4714,127.0399" width="100%" height="100%" style="border:none;" allowfullscreen></iframe>
+                    <!-- PC: 네이버 지도 iframe -->
+                    <iframe class="kakao-map-desktop" src="https://map.naver.com/p/entry/place/31761505?c=15.00,0,0,0,dh" width="100%" height="100%" style="border:none;" allowfullscreen></iframe>
                     
                     <!-- 모바일: 지도 보기 버튼 -->
                     <div class="kakao-map-mobile" style="display: none;">
@@ -1001,11 +1036,11 @@
                             <div style="font-size: 3rem;">🗺️</div>
                             <h4 style="font-size: 1.3rem; color: var(--primary-dark); margin: 0;">강남아쿠엠 위치</h4>
                             <p style="color: #666; text-align: center; line-height: 1.8; margin: 10px 0;">서울특별시 서초구 언남길 60<br>창주빌딩 1층 (양재동 307)</p>
-                            <a href="https://map.kakao.com/link/map/강남아쿠엠,37.4714,127.0399" target="_blank" style="display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, var(--primary-gold) 0%, var(--luxury-brown) 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3); margin-bottom: 10px;">
-                                카카오맵으로 위치 보기
-                            </a>
-                            <a href="https://map.naver.com/p/entry/place/31761505" target="_blank" style="display: inline-block; padding: 15px 35px; background: #03C75A; color: white; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; box-shadow: 0 10px 30px rgba(3, 199, 90, 0.3); margin-bottom: 20px;">
+                            <a href="https://map.naver.com/p/entry/place/31761505" target="_blank" style="display: inline-block; padding: 15px 35px; background: #03C75A; color: white; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; box-shadow: 0 10px 30px rgba(3, 199, 90, 0.3); margin-bottom: 10px;">
                                 네이버지도로 위치 보기
+                            </a>
+                            <a href="https://map.kakao.com/link/map/강남아쿠엠,37.4714,127.0399" target="_blank" style="display: inline-block; padding: 15px 35px; background: linear-gradient(135deg, var(--primary-gold) 0%, var(--luxury-brown) 100%); color: white; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3); margin-bottom: 20px;">
+                                카카오맵으로 위치 보기
                             </a>
                         </div>
                     </div>
@@ -1106,26 +1141,43 @@
     </footer>
 
     <script>
-        // 페이지 로드 시 맨 위로 스크롤 (URL 해시 무시)
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
-        
-        window.addEventListener('beforeunload', () => {
+        // 페이지 로드 시 맨 위로 스크롤 (강제)
+        document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo(0, 0);
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            // URL 해시 제거
+            if (window.location.hash) {
+                history.replaceState(null, null, window.location.pathname);
+            }
         });
         
         window.addEventListener('load', () => {
-            // URL 해시 제거
+            // URL 해시 완전히 제거
             if (window.location.hash) {
-                history.replaceState(null, null, window.location.pathname + window.location.search);
+                history.replaceState(null, null, window.location.pathname);
             }
-            // 강제로 맨 위로 스크롤
-            setTimeout(() => {
+            // 다중 시도로 강제 스크롤
+            const scrollToTop = () => {
                 window.scrollTo(0, 0);
                 document.documentElement.scrollTop = 0;
                 document.body.scrollTop = 0;
-            }, 0);
+            };
+            scrollToTop();
+            setTimeout(scrollToTop, 1);
+            setTimeout(scrollToTop, 10);
+            setTimeout(scrollToTop, 50);
+            setTimeout(scrollToTop, 100);
+            setTimeout(scrollToTop, 200);
+            setTimeout(scrollToTop, 500);
+        });
+        
+        // popstate 이벤트도 차단 (뒤로가기/앞으로가기)
+        window.addEventListener('popstate', () => {
+            if (window.location.hash) {
+                history.replaceState(null, null, window.location.pathname);
+            }
+            window.scrollTo(0, 0);
         });
 
         // 년도 자동 계산
@@ -1177,11 +1229,20 @@
             });
         });
 
-        // 부드러운 스크롤
+        // 부드러운 스크롤 (페이지 로드 후에만 작동)
+        let pageLoaded = false;
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                pageLoaded = true;
+            }, 200);
+        });
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                if (!pageLoaded) return; // 페이지 로드 중에는 스크롤 방지
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
+                if (targetId === '#') return; // # 만 있는 경우 무시
                 const target = document.querySelector(targetId);
                 if (target) {
                     const navElement = document.querySelector('nav');
